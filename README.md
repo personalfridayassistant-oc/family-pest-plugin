@@ -1,43 +1,36 @@
-# Family Pest Miniquest Plugin
+# VitaLite Quest Automation Plugins
 
-A VitaLite external plugin that automates the Family Pest miniquest in Old School RuneScape.
+This repository contains VitaLite external plugins for automating OSRS quest and miniquest progression.
 
-## Requirements
+## Included plugins
 
-- **Quest Prerequisite:** Family Crest (completed)
-- **Items Required:** 500,000 coins
-- **Recommended Teleports:** 
-  - Varrock Teleport (for Dimintheis)
-  - Camelot/Catherby Teleport (for Caleb)
-  - Ring of Dueling (for Avan)
-  - Lumberyard Teleport (for Johnathon)
+### 1) Family Pest Miniquest Plugin
 
-## Features
+Automates the Family Pest miniquest flow:
+- Checks Family Crest prerequisite
+- Visits all Fitzharmon brothers
+- Returns to Dimintheis for completion
 
-- Automatically detects quest progress and resumes from where you left off
-- Handles dialogue with all brothers (Dimintheis, Avan, Caleb, Johnathon)
-- Walker pathfinding handles doors automatically
-- Supports multiple teleport tablet types
-- Displays current state on overlay
+### 2) Cook's Assistant Auto Plugin
 
-## Installation
+Automates Cook's Assistant completion once required ingredients are in inventory:
+- 1x Egg
+- 1x Bucket of milk
+- 1x Pot of flour
 
-1. Build the plugin: `gradlew jar`
-2. Copy `build/libs/familypest-1.0.0.jar` to your RuneLite sideloaded-plugins folder
-3. Enable the plugin in RuneLite
+The plugin will:
+- verify ingredients,
+- walk to the Lumbridge castle kitchen,
+- handle dialogue with the Cook,
+- complete quest hand-in.
 
-## Usage
+## Build
 
-1. Ensure you have completed Family Crest quest
-2. Have 500k coins in inventory
-3. Start the plugin
-4. The plugin will automatically visit all brothers and complete the miniquest
+```bash
+gradlew jar
+```
 
-## Reward
+## Notes
 
-- Ability to own all three Steel Gauntlet variants (Chaos, Cooking, Goldsmith) simultaneously
-- Free replacement gauntlets from Dimintheis or any brother
-
-## License
-
-MIT
+- Plugin architecture is state-machine based via `VitaPlugin`.
+- See `docs/quest-selection.md` for the quest selection and implementation rationale.
