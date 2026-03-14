@@ -24,6 +24,16 @@ The plugin will:
 - handle dialogue with the Cook,
 - complete quest hand-in.
 
+
+### 3) F2P Quest Chain Auto Plugin
+
+Automates selected **free-to-play quests** in a chained sequence:
+- supports selecting multiple F2P quests,
+- optional chain mode to run selected quests back-to-back,
+- requirement checks per quest,
+- optional Grand Exchange acquisition for missing required items,
+- walking + NPC dialogue progression using VitaLite APIs.
+
 ## Build
 
 ```bash

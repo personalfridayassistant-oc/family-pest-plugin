@@ -187,6 +187,18 @@ public class CooksAssistantPlugin extends VitaPlugin {
         return player.distanceTo(target) <= distance;
     }
 
+    public boolean hasEgg() {
+        return hasEgg;
+    }
+
+    public boolean hasMilk() {
+        return hasMilk;
+    }
+
+    public boolean hasFlour() {
+        return hasFlour;
+    }
+
     public enum State {
         IDLE,
         CHECK_REQUIREMENTS,
