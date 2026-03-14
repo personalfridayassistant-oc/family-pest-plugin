@@ -72,7 +72,7 @@ public final class F2PQuestChainConstants {
                 Collections.singletonList("Can I offer you some rum?"),
                 Collections.singletonList(new RequiredItem(ItemID.WHITE_APRON, "White apron", 1)),
                 "No skill requirements. Often needs White apron and Karamja trip items."),
-            new QuestTask("PRINCE_ALI_RESCUE", "Prince Ali Rescue", new WorldPoint(3305, 3163, 0), NpcID.HASSAN,
+            new QuestTask("PRINCE_ALI_RESCUE", "Prince Ali Rescue", new WorldPoint(3305, 3163, 0), -1,
                 Collections.singletonList("I can offer to help."), Collections.emptyList(),
                 "No skill requirements. Multi-item rescue sequence."),
             new QuestTask("VAMPIRE_SLAYER", "Vampire Slayer", new WorldPoint(3097, 3266, 0), NpcID.MORGAN,
